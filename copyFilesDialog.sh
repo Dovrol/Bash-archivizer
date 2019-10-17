@@ -28,6 +28,9 @@ function copyFiles(){
 		case $? in 
 			0) 
 				if [ ! -d $device ]; then
+					if [ -f $device ]; then
+						showMsg "Error" "Destination must be a folder not file !"
+					fi
 					mkdir $device
 				fi
 
