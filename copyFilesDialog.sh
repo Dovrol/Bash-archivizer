@@ -92,7 +92,8 @@ case $? in
 					index=`cat tmp_file`
 					device=${my_array[$index]};;
 				1)
-					showMsg "Exit" "Thanks for using my program";;
+					showMsg "Exit" "Thanks for using my program"
+					exit;; 
 			esac
 
 			dialog --clear --title "Select directory on $device" \
