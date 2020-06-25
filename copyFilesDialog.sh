@@ -132,6 +132,3 @@ if [ $dir == 0 ]; then
 else
 	copyFiles $dir
 fi
-
-# # student@155.158.122.205
-# # pass: ST1D1NT2019
